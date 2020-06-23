@@ -1,0 +1,125 @@
+
+header img{ margin: 5px 5px; width: 250px;}
+
+body{background-color: rgb(240, 238, 238);}
+
+*{padding: 0;margin: 0;}
+
+/*menu*/
+.menu{background-color:rgb(17, 17, 17) ; display: flex; }
+
+ul{list-style: none; }
+
+.lista li a{background-color:  rgb(17, 17, 17); text-decoration: none; padding: 10px 30px 10px 30px; display: block; color: white; }
+
+.lista li a:hover{ background-color: rgb(54, 54, 54)}
+
+.lista > li{float: left; border: 1px solid rgb(63, 63, 63);}
+
+.lista li ul{display:none ; position: absolute;}
+
+.lista li:hover > ul{display: block; }
+
+.lista li ul li{ border: 1px solid rgb(63, 63, 63);}
+/**/
+
+h2{color: white; display: inline; font-size: a; margin-left: 20px;}
+
+button{border: transparent ;border-radius: 40px; padding: 3px 6px 3px 6px; cursor: pointer;float: right; margin-right: 15px;margin-top: 10px; text-align: center;}
+
+.contenedor{display: flex; flex-flow: wrap column; align-items: center;}
+
+.laliga{background-color: #336666; width: 99%;height: 95px;margin: 3px 0 0 0;cursor: pointer;border: rgba(0, 0, 0, 0.4) solid 2px;}
+
+.premier{background-color: #3399cc; width: 99%;height: 95px;margin: 3px 0 0 0;cursor: pointer;border: rgba(0, 0, 0, 0.4) solid 2px;}
+
+.bundesliga{background-color: #ce0000; width: 99%;height: 95px;margin: 3px 0 0 0;cursor: pointer;border: rgba(0, 0, 0, 0.4) solid 2px;}
+
+.ligue1{background-color: #333366; width: 99%;height: 95px;margin: 3px 0 0 0;cursor: pointer;border: rgba(0, 0, 0, 0.4) solid 2px;}
+
+.calcio{background-color: #0066cc; width: 99%;height: 95px;margin: 3px 0 0 0;cursor: pointer;border: rgba(0, 0, 0, 0.4) solid 2px;}
+
+.salvador{background-color: #000033; width: 99%;height: 95px;margin: 3px 0 0 0;cursor: pointer;border: rgba(0, 0, 0, 0.4) solid 2px;}
+
+.resto{background-color: #43627c; width: 99%;height: 95px;margin: 3px 0 0px 0; cursor: pointer ;border: rgba(0, 0, 0, 0.4) solid 2px;}
+
+article{margin-top: 5px;margin-bottom: 5px; display: none; width: 30%; text-align: center; padding: 10px;}
+
+article >img{max-width: 350px;;width: fit-content; max-height: 250px; height: auto;}
+
+h3,p{margin: 5px;}
+
+
+
+.noticiasl{color: #b9dbdb;}
+
+.noticiasl>article:hover{background-color:#245050;}
+
+.noticiast{color: #d0ebeb;}
+
+.noticiast>article:hover{background-color:#324e64;}
+
+.noticiass{color: #ffffff;}
+
+.noticiass>article:hover{background-color:#00001b;}
+
+.noticiasp{color: #c5fcfc;}
+
+.noticiasp>article:hover{background-color:#2685b4;}
+
+.noticiasb{color: #ffffff;}
+
+.noticiasb>article:hover{background-color:#830202;}
+
+.noticias1{color: #ffffff;}
+
+.noticias1>article:hover{background-color:#242450;}
+
+.noticiasc{color: #ffffff;}
+
+.noticiasc>article:hover{background-color:#0251a0}
+
+/*footer*/
+
+footer{display: flex; justify-content: space-around; margin-top: 10px; background-color: rgb(194, 194, 194);}
+
+footer>div{flex-flow: wrap row;}
+
+audio{height: 20px; border: rgb(17, 17, 17) 1px solid; border-radius: 10px;}
+
+#audio{display: flex; align-items: center;}
+
+#redes>div>p{margin: 20px 0 0 5px;color: white;}
+
+div>img{width: 50px; height: 50px;}
+
+#redes>div{margin:0 20px 0 0px; display: flex; align-content: center;}
+
+/**/
+
+@media only screen and (min-width:1px){
+    [class*="noticias"]{display: flex; flex-flow: row wrap; }
+    article{width:auto}
+    h2{font-size: 50px}
+    #redes{display: flex; flex-flow: wrap column; }
+
+
+}
+
+@media only screen and (min-width:800px){
+    [class*="noticias"]{display: flex; flex-flow: row wrap; }
+    article{width: 45%;}
+    h2{font-size: 60px}
+    #redes{display: flex; flex-flow: wrap row; }
+    
+}
+
+@media only screen and (min-width:1200px){
+    [class*="noticias"]{display: flex; flex-flow: row wrap;justify-content: space-around; }
+    article{width: 30%;} 
+    h2{font-size: 70px} 
+    #redes{display: flex; flex-flow: wrap row; } 
+}
+
+
+
